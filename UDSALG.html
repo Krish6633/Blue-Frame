@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>Formate</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .outer {
+            height: 1200px;
+            width: 1200px;
+            position: relative;
+            background-image: url("Format.png");
+        }
+        
+        .text {
+            position: absolute;
+            font-size: 3.5rem;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+        }
+        
+        .top,
+        .bottom {
+            width: calc(100% - 180px);
+            height: 90px;
+            left: 90px;
+            justify-content: space-between;
+        }
+        
+        .top {
+            top: 0px;
+        }
+        
+        .bottom {
+            bottom: 0px;
+        }
+        
+        .right,
+        .left {
+            height: 100%;
+            width: 90px;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: -3px;
+            justify-content: space-around;
+        }
+        
+        .right {
+            right: 0px;
+        }
+        
+        .left {
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="text top"><span>UDSALG</span><span>UDSALG</span><span>UDSALG</span><span>UDSALG</span></div>
+        <div class="text right"><span>UDSALG</span><span>UDSALG</span><span>UDSALG</span></div>
+        <div class="text left"> <span>UDSALG</span><span>UDSALG</span><span>UDSALG</span></div>
+        <div class="text bottom"><span>UDSALG</span><span>UDSALG</span><span>UDSALG</span><span>UDSALG</span></div>
+    </div>
+</body>
+
+</html>

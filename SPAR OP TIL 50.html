@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .outer {
+            height: 1200px;
+            width: 1200px;
+            position: relative;
+            background-image: url("Format.png");
+        }
+        
+        .text {
+            position: absolute;
+            font-size: 3.5rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: bolder;
+        }
+        
+        .top,
+        .bottom {
+            width: 100%;
+            height: 90px;
+        }
+        
+        .top {
+            top: 0px;
+        }
+        
+        .bottom {
+            bottom: 0px;
+        }
+        
+        .right,
+        .left {
+            height: 100%;
+            width: 90px;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: -8px;
+        }
+        
+        .right {
+            right: 0px;
+        }
+        
+        .left {
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="text top"><span>SPAR OP TIL 50% &nbsp;&nbsp;&nbsp;&nbsp;</span><span>SPAR OP TIL 50%</span></div>
+        <div class="text right"><span>SPAR OP TIL 50%</span></div>
+        <div class="text left"> <span>SPAR OP TIL 50%</span></div>
+        <div class="text bottom"><span>SPAR OP TIL 50%&nbsp;&nbsp;&nbsp;&nbsp;</span><span>SPAR OP TIL 50%</span></div>
+    </div>
+</body>
+
+</html>
